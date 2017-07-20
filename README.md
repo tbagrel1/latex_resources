@@ -1,2 +1,2 @@
 # model_latex
-Extension modèle pour LaTeX
+Model package for LaTeX.
