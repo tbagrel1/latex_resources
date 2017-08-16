@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 
-\ProvidesPackage{tbagrelbeamer}[28/06/2017 - V0.1]
+\ProvidesPackage{tbagrelbeamer}[16/08/2017 - V0.1.1]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -11,18 +11,23 @@
 \RequirePackage{calc}
 
 % \RequirePackage[margin=2cm]{geometry}
-
+\RequirePackage[activate={true, nocompatibility}, stretch=10, shrink=10, kerning=true]{microtype}
 \RequirePackage{hyperref}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{amsthm}
+\RequirePackage{oldnbs11}
+\RequirePackage{ospecial}
+\RequirePackage{xcolor}
 \RequirePackage{upref}
 \RequirePackage{setspace}
 % \RequirePackage{enumitem}
 \RequirePackage[scr]{rsfso}
 \RequirePackage[retainorgcmds]{IEEEtrantools}
 \RequirePackage{graphicx}
+\RequirePackage{tikz}
 \RequirePackage{caption}
+% \RequirePackage{fancyhdr}
 \RequirePackage{fancybox}
 \RequirePackage{pgfornament}
 \RequirePackage{tabularx}
@@ -107,9 +112,9 @@
 \newcommand{\itg}[1]{[\![#1]\!]}
 
 % Commande \intertext dans les environnements IEEEeqnarray
-% \makeatletter
-% \patchcmd{\@IEEEeqnarray}{\relax}{\relax\intertext@}{}{}
-% \makeatother
+\makeatletter
+\patchcmd{\@IEEEeqnarray}{\relax}{\relax\intertext@}{}{}
+\makeatother
 
 % En-tête personnalisé et boîtes de titre
 \newcommand{\heading}[5]{{#5
