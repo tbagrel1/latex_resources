@@ -6,23 +6,28 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
-\RequirePackage[frenchb]{babel}
+\RequirePackage[frenchb, english]{babel}
 \RequirePackage{etoolbox}
 \RequirePackage{calc}
 
 \RequirePackage[margin=2cm]{geometry}
-
+\RequirePackage[activate={true, nocompatibility}, stretch=10, shrink=10, kerning=true]{microtype}
 \RequirePackage{hyperref}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{amsthm}
+\RequirePackage{oldnbs11}
+\RequirePackage{ospecial}
+\RequirePackage{xcolor}
 \RequirePackage{upref}
 \RequirePackage{setspace}
 \RequirePackage{enumitem}
 \RequirePackage[scr]{rsfso}
 \RequirePackage[retainorgcmds]{IEEEtrantools}
 \RequirePackage{graphicx}
+\RequirePackage{tikz}
 \RequirePackage{caption}
+\RequirePackage{fancyhdr}
 \RequirePackage{fancybox}
 \RequirePackage{pgfornament}
 \RequirePackage{tabularx}
@@ -234,6 +239,8 @@
 \let\x\times
 \let\cd\cdot
 \let\tss\textsuperscript
+
+\pagestyle{plain}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

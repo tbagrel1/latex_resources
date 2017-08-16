@@ -1,0 +1,16 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\ProvidesPackage{concretefull}[05/08/2017 - V0.1]
+
+\RequirePackage{beton, euler}
+
+\makeatletter
+\input{t1lmss.fd}
+\input{t1ccr.fd}
+\makeatother
+
+\AtBeginDocument
+{\DeclareFontShape\encodingdefault{ccr}{bx}{n}{<->sub*lmss/sbc/n}{}%
+\DeclareFontShape\encodingdefault{ccr}{bx}{it}{<->sub*lmss/sbc/it}{}%
+\DeclareFontShape\encodingdefault{ccr}{bx}{sl}{<->sub*lmss/sbc/sl}{}%
+\DeclareFontShape\encodingdefault{ccr}{bx}{sc}{<->sub*lmss/sbc/sc}{}}
