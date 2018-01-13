@@ -6,7 +6,7 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8]{inputenc}
-\RequirePackage[frenchb, english]{babel}
+\RequirePackage[french, english]{babel}
 \RequirePackage{etoolbox}
 \RequirePackage{calc}
 
@@ -28,6 +28,8 @@
 \RequirePackage{tikz}
 \RequirePackage{caption}
 \RequirePackage{fancyhdr}
+% \RequirePackage[pagestyles, outermarks]{titlesec}
+% \RequirePackage{lastpage} NOT WORKING
 \RequirePackage{fancybox}
 \RequirePackage{pgfornament}
 \RequirePackage{tabularx}
@@ -142,9 +144,9 @@
 \end{center}}
 
 \newcommand{\fancyovalbox}[3]{\cornersize*{6mm}\setlength{\fboxsep}{#3}\noindent
-\Ovalbox{\begin{minipage}{#2-2\fboxsep}
+\Ovalbox{\begin{minipage}{#2-2\fboxsep}\begin{center}
 #1
-\end{minipage}}}
+\end{center}\end{minipage}}}
 
 \newcommand{\ornament}[2]{\begin{center}
 \pgfornament[width=#2]{#1}
