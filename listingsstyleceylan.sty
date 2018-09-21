@@ -1,0 +1,33 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{listingsstyleceylan}[2018-02-26 Ceylan style for listings]
+\RequirePackage{colorsceylan}
+\RequirePackage{inconsolata}
+\RequirePackage{listings}
+
+\newcommand{\listingstitleformat}[1]{{\large\sffamily\color{regulargreen} #1}}
+\lstset{
+  basicstyle=\ttfamily\small\color{microgray},
+  stringstyle=\color{regulargray},
+  commentstyle=\itshape\color{regulargreen},
+  identifierstyle=\color{minigray},
+  keywordstyle=\color{regularblue}\bfseries,
+  numberstyle=\ttfamily\footnotesize\color{regulargray},
+  numbers=left,
+  numbersep=10pt,
+  backgroundcolor=\color{supergray},
+  rulecolor=\color{supergray},
+  title=\listingstitleformat{\lstname},
+  breakatwhitespace=true,
+  breaklines=false,
+  captionpos=t,
+  frame=single,
+  keepspaces=true,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  stepnumber=1,
+  tabsize=4,
+  numberblanklines=false,
+  frameround=ffff,
+}
+\endinput

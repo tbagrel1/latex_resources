@@ -1,2 +1,3 @@
 # model_latex
-Model package for LaTeX.
+
+Templates and custom definitions for LaTeX.

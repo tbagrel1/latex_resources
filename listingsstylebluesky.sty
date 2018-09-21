@@ -1,0 +1,33 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{listingsstylebluesky}[2018-09-21 Blue Sky style for listings]
+\RequirePackage{colorsbluesky}
+\RequirePackage{inconsolata}
+\RequirePackage{listings}
+
+\newcommand{\listingstitleformat}[1]{{\large\sffamily\color{regularcrimson} #1}}
+\lstset{
+  basicstyle=\ttfamily\small\color{extragray},
+  stringstyle=\color{regulargray},
+  commentstyle=\itshape\color{regularblue},
+  identifierstyle=\color{supergray},
+  keywordstyle=\color{regularcrimson}\bfseries,
+  numberstyle=\ttfamily\footnotesize\color{regulargray},
+  numbers=left,
+  numbersep=10pt,
+  backgroundcolor=\color{minigray},
+  rulecolor=\color{minigray},
+  title=\listingstitleformat{\lstname},
+  breakatwhitespace=true,
+  breaklines=false,
+  captionpos=t,
+  frame=single,
+  keepspaces=true,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  stepnumber=1,
+  tabsize=4,
+  numberblanklines=false,
+  frameround=ffff,
+}
+\endinput

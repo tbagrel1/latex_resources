@@ -1,0 +1,31 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{listingsstylepurple}[2018-09-21 Purple style for listings]
+\RequirePackage{inconsolata}
+\RequirePackage{color, xcolor}
+\RequirePackage{listings}
+\lstset{
+  basicstyle=\ttfamily\normalsize\color{violet!100},
+  stringstyle=\color{orange!100},
+  commentstyle=\itshape\color{olive!100},
+  identifierstyle=\color{black!80},
+  keywordstyle=\color{magenta!100}\bfseries,
+  numberstyle=\ttfamily\small\color{black!50},
+  numbers=left,
+  numbersep=20pt,
+  backgroundcolor=\color{yellow!15},
+  rulecolor=\color{black!30},
+  title=\large\ttfamily\lstname,
+  breakatwhitespace=true,
+  breaklines=false,
+  captionpos=t,
+  frame=single,
+  keepspaces=true,
+  showspaces=false,
+  showstringspaces=true,
+  showtabs=false,
+  stepnumber=1,
+  tabsize=4,
+  numberblanklines=false,
+  frameround=tttt,
+}
+\endinput
